@@ -16,7 +16,7 @@ namespace JeuxDeCartes.Observateurs
             observateurs.Add(observateur);
         }
 
-        public void SupprimerObservateur(IObservateur observateur)
+        public void RetirerObservateur(IObservateur observateur)
         {
             observateurs.Remove(observateur);
         }

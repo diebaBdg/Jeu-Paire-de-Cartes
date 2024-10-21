@@ -9,7 +9,7 @@ namespace JeuxDeCartes.Observateurs
     public interface ISujet
     {
         void AjouterObservateur(IObservateur observateur);
-        void SupprimerObservateur(IObservateur observateur);
-        void AvertirObservateurs(string message);
+        void RetirerObservateur(IObservateur observateur);
+        void AvertirObservateurs(string message); // Méthode pour notifier les observateurs
     }
 }

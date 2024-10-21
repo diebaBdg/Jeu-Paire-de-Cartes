@@ -15,7 +15,7 @@ namespace JeuxDeCartes
             PaireDeCartes jeuDeCartes = new PaireDeCartes();
             jeuDeCartes.Initialiser();
 
-            // Créer le jeu de pêche (il doit être créé avant les joueurs)
+            // Créer le jeu de pêche
             JeuxDePêche jeuDePêche = new JeuxDePêche(new List<Joueur>(), jeuDeCartes);
 
             // Initialisation des joueurs en passant le jeu comme sujet

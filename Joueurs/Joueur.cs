@@ -44,11 +44,20 @@ namespace JeuxDeCartes.Joueurs
             {
                 Carte carteJouee = Main[0]; // Choisir une carte en fonction des règles
                 Main.RemoveAt(0); // Retire la carte de la main
+
+                // Vérification du nombre de cartes restantes
+                if (Main.Count == 1)
+                {
+                    Console.WriteLine($"Attention : {Nom} n'a plus qu'une carte !");
+                    sujet.AvertirObservateurs($"Attention : {Nom} n'a plus qu'une carte !");
+                }
+
                 return carteJouee; // Retourne la carte jouée
             }
 
             return null;
         }
+
 
         public void AjouterCarteAuDepot(Carte carte)
         {

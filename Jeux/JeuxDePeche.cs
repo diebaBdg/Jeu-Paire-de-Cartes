@@ -86,6 +86,9 @@ namespace JeuxDeCartes.Jeux
                     // Notifier les observateurs de l'action du joueur
                     NotifierObservateurs($"{joueurActuel.Nom} a joué {carteJouee} !");
 
+                    // **Nouvelle vérification : notifier si un joueur n'a plus qu'une carte**
+                    NotifierJoueurs();
+
                     // Gérer les cartes spéciales
                     if (carteJouee.HasValue && carteJouee.Value.EstSpeciale())
                     {
